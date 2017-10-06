@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">BadRoadTracker</string>
+  <string name="title_activity_maps">Map</string>
+
+  <!--LastActivity-->
+  <string name="text_last_1">Thanks for registering with us.</string>
+  <string name="feedback">Got Feedback? Enter Here!</string>
+  <string name="send_feedback">send</string>
+</resources>

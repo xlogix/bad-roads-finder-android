@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animate"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    >
+
+  <android.support.v7.widget.AppCompatButton
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/button2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="90dp"
+      android:background="@drawable/border_button_background"
+      android:padding="8dp"
+      android:text="SEARCH ROADS"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      />
+
+  <android.support.v7.widget.AppCompatButton
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="206dp"
+      android:background="@drawable/border_button_background"
+      android:padding="8dp"
+      android:text="COMPLAINTS AND SUGGESTIONS"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      />
+</RelativeLayout>
+
+

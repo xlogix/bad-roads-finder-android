@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 26
+  buildToolsVersion "26.0.2"
+  defaultConfig {
+    applicationId "me.varsha.badroadtracker"
+    minSdkVersion 17
+    targetSdkVersion 26
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    debug {
+      minifyEnabled false
+      shrinkResources false
+      versionNameSuffix '-DEBUG'
+      // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+    release {
+      minifyEnabled false
+      shrinkResources false
+      versionNameSuffix '-RELEASE'
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  packagingOptions {
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE-FIREBASE.txt'
+    exclude 'META-INF/NOTICE'
+    exclude 'LICENSE.txt'
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  // SUPPORT
+  compile 'com.android.support:appcompat-v7:26.0.2'
+  compile 'com.android.support:design:26.0.2'
+  compile 'com.android.support:support-v4:26.0.2'
+  compile 'com.google.android.gms:play-services-maps:11.0.4'
+  testCompile 'junit:junit:4.12'
+}
